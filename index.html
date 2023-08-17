@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>NEW911</title> 
+</head>
+<body>      
+    <div id="last">
+    <div id="box">
+        <div id="text"><h1>WELCOME</h1></div>
+        <a id="md" href="#content">MORE DETAILS</a>
+        <div id="theme"></div>
+        <div id="theme2"></div>
+        <div id="n9">New 911: Better Than You Ever Imagined</div>
+        <div id="car"><img src="porsche.png"style="height: 40vw; max-height: 576px;"></div>
+    </div>
+    </div>  
+    <div id="content">
+        <div id="icontent">
+            <h1>375 kW/510</h1>KM Moc (kW)/Moc (KM)<br><h1>3,4 s</h1>Przyspieszenie 0 - 100 km/h<br><h1>318 km/h</h1>Prędkość maksymalna</div>
+            <div id="theme3"></div>
+            <img src="porsche2.jpg" id="p2">
+            <a id="md1" href="#content2">MORE DETAILS</a>   
+    </div>
+    <div id="content2">
+        <div id="theme4"><a style="margin-right: 60px;">Rozstaw osi<h1>2457 mm</h1></a><a>Długość<h1>4573 mm</h1></a></div>
+        <img src="porsche6.jpg" id ="p3">
+        <a id="md2" href="#content3">CONTACT</a>   
+    </div>
+    <div id="content3">
+        <div id="icontent3"></div>
+        <a id="tcontact"><h1>CONTACT</h1></a>
+        <a id="pn">+48 689 753 365</a>
+        <a id="ma">contact@pl.porsche.com</a>
+        <a id="md3" href="#last">BACK TO TOP</a> 
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+    <script>
+        gsap.to("#text",{
+            scrollTrigger:{
+                scrub:true
+            },
+            scale:4
+        })
+        gsap.to("#theme",{
+            scrollTrigger:{
+                scrub:true
+            },
+            scale:4
+        })
+        gsap.to("#n9",{
+            scrollTrigger:{
+                scrub:true
+            },
+            scale:2
+        })
+        gsap.to("#theme2",{
+            scrollTrigger:{
+                scrub:true
+            },
+            scale:2
+        })
+        gsap.to("#car",{
+            scrollTrigger:{
+                scrub:true
+            },
+            scale:1.4
+        })
+        gsap.to("#box",{
+            scrollTrigger:{
+                scrub:true
+                
+            },
+            scale:0.1
+            
+        })
+        gsap.from("#icontent",{
+            scrollTrigger:{
+                scrub:true,
+            },
+            x:-300,
+        })
+        gsap.from("#theme3",{
+            scrollTrigger:{
+                scrub:true,
+
+            },
+            x:-300,
+        })
+        gsap.from("#theme4",{
+            scrollTrigger:{
+                scrub:true,
+            },
+            x:800,
+            scale:0.01
+        })
+        gsap.from("#p3",{
+            scrollTrigger:{
+                scrub:true,
+            },
+            x:-200,
+            scale:0.01
+        })
+        gsap.from("#icontent3",{
+            scrollTrigger:{
+                scrub:true,
+            },
+            x:-3000,
+            scale:0.1
+        })
+
+    </script>
+</body>
+</html>

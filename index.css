@@ -1,0 +1,365 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+#last{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+
+    animation-name: a-start;
+    animation-duration: 1.5s;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    flex-direction: column;
+    max-width: 1152px;
+    max-height: 700px;
+    position: relative;
+    transition: 0.2s;
+
+}
+#box:hover{
+    width: calc(80vw+30px);
+    max-width: 65vw;    
+    max-width: 1250px;
+}
+#text{
+    animation-name: a-text;
+    animation-duration: 3s;
+    font-size: 150px;
+    color: #006afd;
+    margin-bottom: 270px;
+    z-index: 2;
+    letter-spacing: 10px;
+    position: absolute;
+    transition: 0.2s;
+}
+
+#car{
+    animation-name: a-car;
+    animation-duration: 2s;
+    position: absolute;
+    z-index: 3;
+
+}
+#md{
+    margin-top:68vh;
+    position: absolute;
+    animation-name: a-md;
+    animation-duration:4s;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition:0.2s;
+}
+#md:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    font-size:25px;
+    transition:0.3s;
+}
+#theme{
+    position: absolute;
+    margin-bottom: 250px;
+    width: 100vw;
+    height: 230px;
+    background-color: black;
+    z-index: 1;
+    animation-name: a-md;
+    animation-duration:3.5s;    
+    max-width: 1257px;
+    max-height: 705px;
+    width: 84vw;
+}
+#theme2{
+    position: absolute;
+    margin-top: 360px;
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    z-index: 1;
+    animation-name: a-md;
+    animation-duration:4s;
+    max-width: 1257px;
+    max-height: 705px;
+    width: 84vw;
+}
+#n9{
+    position: absolute;
+    margin-top: 350px;
+    font-size:70px;
+    z-index: 3;
+    animation-name: a-md;
+    animation-duration:4s;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+@keyframes a-start {
+    0% {
+        opacity: 0;
+
+      }
+      50% {
+        transform: scale(0.5) rotate(45deg);
+      }
+      75% {
+          transform: scale(0.7);
+      }
+      100%{
+          opacity:1;
+      }
+}
+@keyframes a-text {
+    0% {
+        color: white;
+        opacity: 0;
+    }
+    50%{
+        color:white;
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    75%{
+        color: white;
+    }
+    90%{
+
+    }
+}
+@keyframes a-car {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0;
+        transform: translatex(-200px)
+    }
+}
+@keyframes a-md {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0;
+        color: #279EFF;
+    } 
+}
+#content{
+    margin-top: 300px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;   
+    background-attachment: fixed;
+
+}
+#icontent{
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    height: 85vh;
+    width: 30vw;
+    margin: auto;
+    max-width: 1152px;
+    position: absolute;
+    z-index: 9999;
+    left:10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    transition: 0.2s;
+}
+#icontent:hover{
+    font-size: 28px;
+}
+
+#p2{
+
+    width: 98.5vw;
+    position:absolute; 
+    z-index: 1;
+}
+#theme3{
+    position:absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    max-width: 1155px;
+    height: 85vh;
+    width: 30.1vw;
+    margin: auto;
+    opacity: 0.6;
+    left:10vw;
+}
+#md1{
+    margin-top:85vh;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    z-index: 6;
+}
+#md1:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    font-size:25px;
+    transition:0.3s;
+}
+#content2{
+    margin-top: 200px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #0b182bbe;
+    align-items: center;
+    background-image: url(gradientw.png);
+    background-position: top;
+    background-size: cover;
+}
+#theme4{
+    height: 33vh;
+    width: 81vw;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    position: absolute;
+    font-size: 35px;
+    padding-left: 10vw;
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+    right: 14vw;
+    transition: 0.2s;
+}
+#theme4:hover{
+    height: 37vh;
+    font-size: 45px;
+}
+#p3{
+    width: 50vw;
+    position: absolute;
+    margin-left: 50vw;
+    transform: rotate(4deg);
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    transition: 0.2s;
+}
+#p3:hover{
+    width: 58vw;
+    transform: rotate(4deg);
+    margin-left: 42vw;
+
+}
+#content3{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0b182bbe ;
+}
+#md2{
+    margin-top:85vh;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    z-index: 6;
+}
+#md2:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    font-size:25px;
+    transition:0.3s;
+}
+#icontent3{
+    display: flex;
+    height: 80vh;
+    width: 30vw;
+    margin: auto;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    flex-direction: column;
+    max-width: 1152px;
+    max-height: 700px;
+    position: absolute;
+    transition: 0.2s;
+    left: 60vw;
+}
+
+#tcontact{
+    font-size: 140px;
+    position: absolute;
+    background-color: #081220;
+    line-height: 50px;
+    left:13vw;
+    transition: 0.2s;
+}
+#tcontact:hover{
+    font-size: 145px;
+    left: 11vw;
+}
+#pn{
+    position: absolute;
+    font-size: 50px;
+    margin-top:39vh;
+    left:13vw;
+    transition: 0.2s;
+}
+#pn:hover{
+    font-size: 55px;
+}
+
+#ma{
+    position: absolute;
+    font-size: 50px;
+    margin-top:49vh;
+    left: 13vw;
+    transition: 0.2s;
+}
+#ma:hover{
+    font-size: 55px;
+}
+#md3{
+    margin-top:87vh;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    z-index: 6;
+}
+#md3:hover{
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    font-size:25px;
+    transition:0.3s;
+}
